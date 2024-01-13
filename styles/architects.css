@@ -114,50 +114,78 @@ main {
 }
 
 /* facts section */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
 
-.facts-card-container> .card {
+.facts-card-container>.card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 30px;
 }
-.facts-card-container .card-title{
+
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
 }
 
-.facts-card-container .card-stats{
-    color:#424242 ;
+.facts-card-container .card-stats {
+    color: #424242;
     font-size: 2.8rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 /* sponsors style section */
-.sponsors{
+.sponsors {
     text-align: center;
 }
-.sponsors-img-container{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
     gap: 40px;
 }
-.sponsors-img-container img{
-width: 165px;
-height: ;
+
+.sponsors-img-container img {
+    width: 165px;
 }
+
+/* footer section  */
+
+.footer {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    max-width: 800px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.footer-text {
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
 
 /* Resposive Media Queries */
 /* mobile devices */
 
 @media screen and (max-width:576px) {
-    header {
+    header,
+    .footer {
         padding: 20px;
+    }
+    .footer{
+        height: 100%;
     }
 
     nav,
